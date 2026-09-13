@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sales References | Matalon Equestrian</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #171717;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      width: min(1180px, 90%);
+      margin: 0 auto;
+      padding: 80px 0 100px;
+    }
+
+    .page-title {
+      text-align: center;
+      margin-bottom: 15px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 46px;
+      font-weight: 400;
+      letter-spacing: 5px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #777;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 55px;
+    }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: #b7b7b7;
+      margin: 0 auto 55px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      margin: 60px 0 35px;
+    }
+
+    .references-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .reference-card {
+      text-align: center;
+      border-top: 1px solid #dedede;
+      padding-top: 22px;
+    }
+
+    .reference-name {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 23px;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+    }
+
+    .reference-status {
+      margin-top: 9px;
+      color: #777;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .back-link {
+      display: block;
+      width: fit-content;
+      margin: 70px auto 0;
+      color: #444;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 2px;
+      border-bottom: 1px solid #aaa;
+      padding-bottom: 4px;
+    }
+
+    .back-link:hover {
+      color: #000;
+      border-color: #000;
+    }
+
+    @media (max-width: 800px) {
+      .references-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .page-title {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .references-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page {
+        width: 92%;
+        padding-top: 50px;
+      }
+
+      .page-title {
+        font-size: 31px;
+        letter-spacing: 3px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <h1 class="page-title">SALES REFERENCES</h1>
+
+    <p class="subtitle">
+      Selected horses proudly represented by Matalon Equestrian
+    </p>
+
+    <div class="divider"></div>
+
+    <section>
+      <h2 class="section-title">SALES</h2>
+
+      <div class="references-grid">
+
+        <div class="reference-card">
+          <h3 class="reference-name">Remember Romance</h3>
+          <p class="reference-status">Sold</p>
+        </div>
+
+        <div class="reference-card">
+          <h3 class="reference-name">McLaren M</h3>
+          <p class="reference-status">Sold</p>
+        </div>
+
+        <div class="reference-card">
+          <h3 class="reference-name">Ferrari M</h3>
+          <p class="reference-status">Sold</p>
+        </div>
+
+        <div class="reference-card">
+          <h3 class="reference-name">Valentino</h3>
+          <p class="reference-status">Sold</p>
+        </div>
+
+        <div class="reference-card">
+          <h3 class="reference-name">Sommermist Pilot</h3>
+          <p class="reference-status">Sold</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">LEASES</h2>
+
+      <div class="references-grid">
+
+        <div class="reference-card">
+          <h3 class="reference-name">Semi Automatic C</h3>
+          <p class="reference-status">Currently Leased</p>
+        </div>
+
+      </div>
+    </section>
+
+    <a href="index.html" class="back-link">
+      Back to Home
+    </a>
+
+  </main>
+
+</body>
+</html>
