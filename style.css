@@ -44,7 +44,7 @@ letter-spacing: 2px;
 
 .hero {
 height: calc(100vh - 90px);
-background-image: linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.18)), url("hero.jpg");
+background-image: linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.18)), url("hero.jpg?v=2");
 background-size: cover;
 background-position: center;
 display: flex;
