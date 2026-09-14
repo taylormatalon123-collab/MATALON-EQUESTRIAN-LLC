@@ -278,3 +278,13 @@ padding: 100px 30px;
     font-size: 36px;
   }
 }
+/* FIX HORSE DETAIL IMAGE CROPPING */
+.horse-detail img {
+  width: 100%;
+  max-width: 900px;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block;
+  margin: 0 auto 30px;
+}
