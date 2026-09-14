@@ -1,28 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>No Doubt O | Matalon Equestrian</title>
-<link rel="stylesheet" href="style.css?v=3">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>No Doubt O | Matalon Equestrian</title>
+
+<style>
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #171717;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.horse-page {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+  padding: 70px 0 90px;
+}
+
+.horse-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.horse-info {
+  max-width: 760px;
+  margin: 55px auto 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 46px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background: #b7b7b7;
+  margin: 30px auto 35px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: left;
+  border-top: 1px solid #e5e5e5;
+}
+
+.detail-row {
+  display: contents;
+}
+
+.label,
+.value {
+  padding: 15px 8px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.label {
+  text-transform: uppercase;
+  color: #777;
+  font-size: 11px;
+  letter-spacing: 1.8px;
+}
+
+.value {
+  text-align: right;
+  color: #1b1b1b;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 48px;
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 4px;
+}
+
+.back-link:hover {
+  color: #000;
+  border-color: #000;
+}
+
+@media (max-width: 700px) {
+  .horse-page {
+    width: 92%;
+    padding-top: 30px;
+  }
+
+  h1 {
+    font-size: 34px;
+    letter-spacing: 3px;
+  }
+}
+
+</style>
 </head>
 
 <body>
 
-  <div class="horse-detail">
-    <a href="index.html" class="back-link">← Back to Horses</a>
+<main class="horse-page">
 
-  <img src="no doubt o.jpg" alt="No Doubt O" style="object-position: center 20%;">
+<img
+  src="no doubt o.jpg"
+  alt="No Doubt O"
+  class="horse-image"
+>
 
-    <h1>No Doubt O</h1>
-   <div class="horse-info">
-  <p><strong>Age:</strong> 8 years old</p>
-  <p><strong>Color:</strong> Bay</p>
-  <p><strong>Sex:</strong> Gelding</p>
-  <p><strong>Discipline:</strong> Hunter / Equitation</p>
-  <p><strong>USEF #:</strong> 6106796</p>
-</div>
+<section class="horse-info">
+
+<h1>NO DOUBT O</h1>
+
+<div class="divider"></div>
+
+<div class="details">
+
+  <div class="detail-row">
+    <div class="label">Age</div>
+    <div class="value">8 Years</div>
   </div>
+
+  <div class="detail-row">
+    <div class="label">Color</div>
+    <div class="value">Bay</div>
+  </div>
+
+  <div class="detail-row">
+    <div class="label">Sex</div>
+    <div class="value">Gelding</div>
+  </div>
+
+  <div class="detail-row">
+    <div class="label">Discipline</div>
+    <div class="value">Hunter / Equitation</div>
+  </div>
+
+  <div class="detail-row">
+    <div class="label">USEF</div>
+    <div class="value">#6106796</div>
+  </div>
+
+</div>
+
+<a href="index.html#horses" class="back-link">
+Back to Horses
+</a>
+
+</section>
+
+</main>
 
 </body>
 </html>
