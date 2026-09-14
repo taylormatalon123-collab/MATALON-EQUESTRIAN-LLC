@@ -325,3 +325,10 @@ padding: 100px 30px;
   display: block;
   margin: 0 auto 18px;
 }
+.reference-item img {
+  width: 260px !important;
+  height: 190px !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 0 auto 18px !important;
+}
