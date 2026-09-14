@@ -3,69 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Moncler ME | Matalon Equestrian</title>
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: white;
-      color: black;
-      text-align: center;
+      background: #ffffff;
+      color: #171717;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     .horse-page {
-      max-width: 900px;
+      width: min(1120px, 90%);
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 70px 0 90px;
     }
 
-    .horse-page img {
+    .horse-image {
       width: 100%;
-      max-width: 650px;
-      height: 500px;
+      height: 600px;
       object-fit: cover;
       object-position: 35% center;
-      border-radius: 4px;
+      display: block;
+    }
+
+    .horse-info {
+      max-width: 760px;
+      margin: 55px auto 0;
+      text-align: center;
     }
 
     h1 {
-      margin-top: 30px;
-      font-size: 36px;
-      letter-spacing: 2px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 46px;
+      font-weight: 400;
+      letter-spacing: 5px;
+    }
+
+    .barn-name {
+      margin: 12px 0 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      font-style: italic;
+      color: #666;
+    }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: #b7b7b7;
+      margin: 30px auto 35px;
     }
 
     .details {
-      margin-top: 20px;
-      font-size: 18px;
-      line-height: 1.8;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 520px;
+      margin: 0 auto;
+      text-align: left;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    .detail-row {
+      display: contents;
+    }
+
+    .label,
+    .value {
+      padding: 15px 8px;
+      border-bottom: 1px solid #e5e5e5;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .label {
+      text-transform: uppercase;
+      color: #777;
+      font-size: 11px;
+      letter-spacing: 1.8px;
+    }
+
+    .value {
+      text-align: right;
+      color: #1b1b1b;
     }
 
     .back-link {
       display: inline-block;
-      margin-top: 35px;
+      margin-top: 48px;
+      color: #444;
       text-decoration: none;
-      color: black;
-      border-bottom: 1px solid black;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 2px;
+      border-bottom: 1px solid #aaa;
+      padding-bottom: 4px;
+    }
+
+    .back-link:hover {
+      color: #000;
+      border-color: #000;
+    }
+
+    @media (max-width: 700px) {
+      .horse-page {
+        width: 92%;
+        padding-top: 30px;
+      }
+
+      .horse-image {
+        height: 420px;
+      }
+
+      h1 {
+        font-size: 34px;
+        letter-spacing: 3px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="horse-page">
+  <main class="horse-page">
 
-    <img src="moncler me.jpg" alt="Moncler ME">
+    <img
+      src="moncler me.jpg"
+      alt="Moncler ME"
+      class="horse-image"
+    >
 
-    <h1>MONCLER ME</h1>
+    <section class="horse-info">
 
-    <div class="details">
-      <p>More information coming soon.</p>
-    </div>
+      <h1>MONCLER ME</h1>
 
-    <a href="index.html" class="back-link">Back to Horses</a>
+      <p class="barn-name">“Noodle”</p>
 
-  </div>
+      <div class="divider"></div>
+
+      <div class="details">
+
+        <div class="detail-row">
+          <div class="label">Age</div>
+          <div class="value">6 Years</div>
+        </div>
+
+        <div class="detail-row">
+          <div class="label">Color</div>
+          <div class="value">Bay</div>
+        </div>
+
+        <div class="detail-row">
+          <div class="label">Sex</div>
+          <div class="value">Gelding</div>
+        </div>
+
+        <div class="detail-row">
+          <div class="label">Height</div>
+          <div class="value">16.0 hh</div>
+        </div>
+
+        <div class="detail-row">
+          <div class="label">Discipline</div>
+          <div class="value">Hunter / Equitation</div>
+        </div>
+
+        <div class="detail-row">
+          <div class="label">USEF</div>
+          <div class="value">#6111142</div>
+        </div>
+
+      </div>
+
+      <a href="index.html#horses" class="back-link">
+        Back to Horses
+      </a>
+
+    </section>
+
+  </main>
 
 </body>
 </html>
