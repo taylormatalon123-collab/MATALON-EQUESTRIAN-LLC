@@ -24,8 +24,9 @@ body {
 
 .horse-image {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -95,15 +96,14 @@ h1 {
   padding-bottom: 4px;
 }
 
-.back-link:hover {
-  color: #000;
-  border-color: #000;
-}
-
 @media (max-width: 700px) {
   .horse-page {
     width: 92%;
     padding-top: 30px;
+  }
+
+  .horse-image {
+    height: 420px;
   }
 
   h1 {
