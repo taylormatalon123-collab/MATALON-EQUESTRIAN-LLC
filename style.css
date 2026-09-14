@@ -288,3 +288,32 @@ padding: 100px 30px;
   display: block;
   margin: 0 auto 30px;
 }
+/* FINAL HORSE DETAIL PAGE SIZE */
+.horse-detail {
+  max-width: 850px !important;
+  margin: 0 auto !important;
+  padding: 35px 24px 70px !important;
+  text-align: center !important;
+}
+
+.horse-detail img {
+  width: 100% !important;
+  max-width: 680px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto 28px !important;
+}
+
+.horse-detail h1 {
+  font-size: 44px !important;
+  margin: 0 0 8px !important;
+}
+
+.horse-detail p {
+  font-size: 19px !important;
+}
+
+.back-link {
+  display: inline-block !important;
+  margin-bottom: 28px !important;
+}
